@@ -12,7 +12,7 @@ const ProjectTiles = ({
     <div>
       <div className="container container-center padding1rem container-radius bg-gray paddingbottom">
         <h3>
-          <strong>{title}</strong>
+          <strong style={{color:"darkorange"}}>{title}</strong>
         </h3>
         <small>{date}</small>
 

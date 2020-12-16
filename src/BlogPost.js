@@ -1,4 +1,5 @@
 import React from "react";
+import PrimaryButton from "./PrimaryButton";
 import "./styles.css";
 
 const BlogPost = ({
@@ -8,10 +9,14 @@ const BlogPost = ({
 }) => {
   return (
     <div className="App">
+    
       <div className="container container-center bg-gray container-radius">
-        <h2>{blogTitle}</h2>
+        <h2 style={{color:"darkorange"}}>{blogTitle}</h2>
         <small>{blogDate}</small>
         <p>{blogContent}</p>
+        <br/>
+<PrimaryButton buttonText="Read more..."/>
+<br/><br/>
       </div>
     </div>
   );

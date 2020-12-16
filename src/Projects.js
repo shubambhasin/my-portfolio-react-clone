@@ -16,7 +16,7 @@ const Projects = () => {
       </header>
       <br/>
       <br/>
-      <h1> Hello Humans, I am Project !</h1>
+      
 
       <ProjectTiles />
       <ProjectTiles
