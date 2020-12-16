@@ -1,16 +1,27 @@
 import React from "react";
 import "./styles.css";
-
+import frontpage from "./frontpage.svg";
 const Home = () => {
   return (
     <div>
-      <header className="container container-center"></header>
+      <br/>
+      <br/>
+      <br/>
+
+      <header className="container container-center">
+      <img class="header-images-medium" 
+      src={frontpage} alt=""/>
+      </header>
 
       <br/>
+      <br/>
+      <br/>
+      
 
       <h1 className="container-center text-center">
         Shubam Bhasin <span>Portfolio</span>
       </h1>
+      <br/>
       <br/>
       <br/>
 

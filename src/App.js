@@ -4,8 +4,8 @@ import Navbar from "./Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Projects from "./Projects";
 import AboutMe from "./aboutme";
-import Blogs from "./blog";
 import Home from "./Home";
+import Blogs from "./Blog";
 
 const App = () => {
   return (

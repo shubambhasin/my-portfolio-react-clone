@@ -1,4 +1,6 @@
 import React from "react";
+import PrimaryButton from "./PrimaryButton";
+import SecondaryButton from "./SecondaryButton";
 import "./styles.css";
 
 const ProjectTiles = ({
@@ -15,14 +17,9 @@ const ProjectTiles = ({
         <small>{date}</small>
 
         <p>{tileBody}</p>
-
-        <a href="https://3errf.csb.app/" className="links primary-button">
-          Live Project
-        </a>
+        <PrimaryButton buttonText="Live Project"/>
         <span> </span>
-        <a href="/" className="links secondary-button">
-          Github
-        </a>
+        <SecondaryButton buttonText="Github"/>
       </div>
       <br />
       <br />
