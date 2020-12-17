@@ -6,6 +6,7 @@ const Home = () => {
     <div>
       <br/>
       <br/>
+    <h3 class="text-center"><strong>!WARNING</strong>: Under Construction, few links might be broken :)</h3>
       <br/>
 
       <header className="container container-center">
