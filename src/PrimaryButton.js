@@ -3,11 +3,11 @@ import "./styles.css";
 
 const PrimaryButton = ({
   buttonText = "Button Text",
-  buttonUrl = "Some url"
+  href="https://shubambhasin-reactclone.netlify.app/"
 }) => {
   return (
     <a
-      href="https://rlxpw.csb.app/"
+      href={href}
       class="links primary-button"
     >
       {buttonText}

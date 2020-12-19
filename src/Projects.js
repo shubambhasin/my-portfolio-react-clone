@@ -2,6 +2,7 @@ import React from "react";
 import ProjectTiles from "./ProjectTiles";
 import "./styles.css";
 import projects from "./projects.svg";
+import Footer from "./Footer";
 
 // import PrimaryButton from "./PrimaryButton";
 // import SecondaryButton from "./SecondaryButton";
@@ -16,6 +17,9 @@ const Projects = () => {
       </header>
       <br />
       <br />
+
+      <h2 className="text-center">My <span  style={{color:"#FF512F"}}> Projects</span></h2>
+      <br/>
 
       <ProjectTiles
         title="Astronomy picture of the day"
@@ -87,6 +91,10 @@ const Projects = () => {
         tileBody="This is asimple General Knowledge Quiz Game with levels, users can choose the level in beginning."
         smallText="For more info click below "
       />
+
+      <br/>
+      <br/>
+      <Footer/>
     </div>
   );
 };

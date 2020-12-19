@@ -9,7 +9,7 @@ body {
 }
 
 :root {
-  --primary-color: #ff9500;
+  --primary-color: #ff512f;
   --bg-gray: #f0f0f0;
 }
 
@@ -193,16 +193,30 @@ body {
 
 /**footer**/
 .footer {
-  background-color: var(--primary-color);
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  color: white;
-  font-size: 1rem;
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    transition: 00.5s;
+    color: white;
+    font-size: 1rem;
+    background-size: 200% auto;
+
+}
+.footer:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+.footer li {
+  font-size: small;
+  padding-inline-start: 0;
 }
 
-.footer li a i {
+.footer li a {
+  text-align: center;
+  text-decoration: none;
   color: white;
-  padding: 1rem;
+  padding: ;
 }
 
 .aboutme-img {
@@ -216,3 +230,5 @@ body {
   width: 420px;
   height: 420px;
 }
+
+/**footer**/

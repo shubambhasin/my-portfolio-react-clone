@@ -1,6 +1,9 @@
 import React from "react";
+import Footer from "./Footer";
+import PrimaryButton from "./PrimaryButton";
 import "./styles.css";
 import webDeveloper from "./webDeveloper.svg";
+
 const Home = () => {
   return (
     <div>
@@ -9,7 +12,7 @@ const Home = () => {
       <br />
 
       <header className="container container-center">
-        <img class="header-images-medium" src={webDeveloper} alt="" />
+        <img className="header-images-medium" src={webDeveloper} alt="" />
       </header>
 
       <br />
@@ -23,11 +26,14 @@ const Home = () => {
       <br />
       <br />
 
-      <h2 className="container container-center"><img
+      <h2 className="container container-center">
+        <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/1280px-Arrow_east.svg.png"
           alt=""
           className="arrow"
-        /> Skillset</h2>
+        />{" "}
+        Skillset
+      </h2>
       <br />
       <div className="container container-center bg-gray container-radius">
         <ul className="">
@@ -41,19 +47,24 @@ const Home = () => {
       <br />
       <br />
 
-      <h2 className="container container-center"><img
+      <h2 className="container container-center">
+        <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/1280px-Arrow_east.svg.png"
           alt=""
           className="arrow"
-        /> My Projects</h2>
-            <br />
+        />{" "}
+        My Projects
+      </h2>
+      <br />
       <div className="container container-center container-radius bg-gray">
-<p>You can hop on to the project section directly</p>
-        <a href="./projects.html" className="links primary-button" target="">
-          Project Section
-        </a>
-        <br/>
-        <br/>
+        <p>You can hop on to the project section directly</p>
+       <br/>
+        <PrimaryButton
+          buttonText="Project Section"
+          href="/projects"
+        ></PrimaryButton>
+        <br />
+        <br />
       </div>
 
       <br />
@@ -69,7 +80,7 @@ const Home = () => {
         I write Blogs too..."
       </h2>
       <br />
-      <div class="container container-center container-radius bg-gray">
+      <div className="container container-center container-radius bg-gray">
         <br />
         <p>
           Ocassionally I write blogs about technology, electronic gadgets,
@@ -78,9 +89,10 @@ const Home = () => {
 
         <br />
 
-        <a href="./projects.html" className="links primary-button" target="">
-          Read more...
-        </a>
+        <PrimaryButton
+        buttonText="Read more..."
+        href="http://gameofrom.game.blog/"
+        />
         <br />
         <br />
       </div>
@@ -88,15 +100,18 @@ const Home = () => {
       <br />
       <br />
 
-      <h2 className="container container-center"><img
+      <h2 className="container container-center">
+        <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/1280px-Arrow_east.svg.png"
           alt=""
           className="arrow"
-        /> My Pexel Page </h2>
+        />{" "}
+        My Pexel Page{" "}
+      </h2>
       <br />
       <div className="container container-center bg-gray container-radius">
         <p>
-          Yes, I do click good pictures as well <span>😉</span>{" "}
+          Yes, I do click good pictures as well <span >😉</span>{" "}
         </p>
 
         <p>Find them below</p>
@@ -109,10 +124,12 @@ const Home = () => {
         </a>
         <br />
         <br />
+        
       </div>
       <br />
       <br />
       <br />
+<Footer/>
     </div>
   );
 };

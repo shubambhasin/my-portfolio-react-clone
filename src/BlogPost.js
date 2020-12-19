@@ -11,7 +11,7 @@ const BlogPost = ({
     <div className="App">
     
       <div className="container container-center bg-gray container-radius">
-        <h2 style={{color:"darkorange"}}>{blogTitle}</h2>
+        <h2 style={{color:"#FF512F"}}>{blogTitle}</h2>
         <small>{blogDate}</small>
         <p>{blogContent}</p>
         <br/>
