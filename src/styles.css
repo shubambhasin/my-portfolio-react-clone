@@ -15,6 +15,19 @@ body
     --primary-color: #FF9500;
     --bg-gray: #f0f0f0
 }
+
+.bg-gray {
+    background-image: linear-gradient(to right, #f0f0f0 0%, #d4d4d4 51%, #ededed 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bg-gray:hover
+{
+    background-position: right center;
+
+}
+
 .text-center
 {
     text-align: center;
@@ -95,15 +108,24 @@ body
     list-style: none;
 }
 
-.navigation
-{
+.navigation {
     font-size: 1rem;
-    background-color: var(--primary-color);
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
     padding: 0.7rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(255, 102, 0, 0.19);
 }
+.navigation:hover {
+    cursor: pointer;
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
 
 .navigation ul
 {
@@ -134,24 +156,61 @@ body
 
 /**buttons**/
 
-.primary-button
-{
-    margin-top: 1rem;
-   background-color: var(--primary-color);
-   color: white;
-   border-radius: 0.7rem;
-   padding: 0.5rem;
+.primary-button {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%)
 }
 
-.secondary-button
-{
-    margin-top: 1rem;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-    border-radius: 0.7rem;
+.primary-button {
+    margin: 10px;
     padding: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+
+
+    transition: 0.5s;
+    width: auto;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
 
 }
+
+.primary-button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.secondary-button {
+    background-image: linear-gradient(to right, #e96443 0%, #ff2222 51%, #e96443 100%)
+}
+
+.secondary-button {
+    margin: 10px;
+    padding: 0.5rem;
+    text-align: center;
+
+    transition: 0.5s;
+    width: auto;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    
+    
+}
+
+.secondary-button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
 /**footer**/
 .footer
 {
